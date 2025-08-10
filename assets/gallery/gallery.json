@@ -1,0 +1,29 @@
+{
+  "gallery": [
+    {
+      "title": "Beach Trip",
+      "event": "Summer 2025",
+      "image": "/assets/gallery/image1.jpg"
+    },
+    {
+      "title": "Wedding",
+      "event": "Jan 2025",
+      "image": "/assets/gallery/image2.jpg"
+    },
+    {
+      "title": "Wedding",
+      "event": "Jan 2025",
+      "image": "/assets/gallery/image3.jpg"
+    },
+    {
+      "title": "Wedding",
+      "event": "Jan 2025",
+      "image": "/assets/gallery/image4.jpg"
+    },
+    {
+      "title": "Wedding",
+      "event": "Jan 2025",
+      "image": "/assets/gallery/image5.jpg"
+    }
+  ]
+}

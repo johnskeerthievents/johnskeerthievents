@@ -1,0 +1,442 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, .7)
+}
+
+.navbar a {
+    color: #fff !important;
+    font-weight: 500
+}
+
+.navbar a:hover {
+    color: #53d482 !important
+}
+
+/*.HERO.*/
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative
+}
+
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: #b8923c;
+    display: block;
+    margin: 10px auto 0
+}
+
+.gallery img,
+.service-card {
+    transition: .3s;
+}
+
+.service-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2)
+}
+
+.gallery img:hover {
+    transform: scale(1.05)
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center
+}
+
+.btn-custom {
+    background-color: #53d482;
+    color: #fff;
+    border: none
+}
+
+.btn-custom:hover {
+    background-color: #45b96f;
+    color: #fff
+}
+
+.carousel {
+    min-height: 100vh;
+    overflow: hidden
+}
+
+.carousel-item {
+    height: 100vh !important;
+    width: 100vw !important;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s
+}
+
+.carousel__slide,
+.carousel__slide-image {
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.carousel-item.active {
+    opacity: 1
+}
+
+.carousel__slide {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    pointer-events: none;
+    transition: .6s ease-in-out;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 8vw;
+    animation: 1s ease-out forwards imageGlide
+}
+
+.carousel-item.active .carousel__slide {
+    opacity: 1 !important;
+    pointer-events: all
+}
+
+.carousel__slide-image {
+    height: 90vh;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .25);
+    transform: translateX(100px) scale(1);
+    transition: 1.2s;
+    animation: .9s ease-out forwards imageGlide, 8s ease-in-out forwards zoomInImg
+}
+
+.carousel-item.active .carousel__slide-image {
+    opacity: 1;
+    transform: translateX(0) scale(1.08)
+}
+
+.carousel-item:not(.active).carousel__slide-image {
+    opacity: 0;
+    transform: translateX(-100px) scale(1);
+    letter-spacing: 5px
+}
+
+.carousel__slide-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 4rem 4rem 2rem;
+    border-radius: 1rem;
+    color: #f5f5f5;
+    text-align: left;
+    background: rgba(0, 0, 0, .85);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .4);
+    font-family: 'Montserrat', 'Playfair Display', serif;
+    font-size: 1.4rem;
+    max-width: 60vw;
+    line-height: 1.8;
+    opacity: 0;
+    transform: translateX(60px);
+    animation: 1.8s ease-in-out forwards textGlide, 3s ease-in-out infinite alternate luxGlow
+}
+
+.carousel__slide-title {
+    font-size: 3.2rem;
+    font-weight: 200;
+    max-width: 1000px;
+    margin: 0
+}
+
+.carousel__slide-description {
+    font-size: 1.15rem;
+    margin: 1.5rem auto 0;
+    max-width: 800px;
+    opacity: .9;
+    line-height: 1.3
+}
+
+.carousel__slide-button {
+    background: #000;
+    color: #fff;
+    padding: .9rem 1.8rem;
+    font-size: 1rem;
+    border: 1px solid #fff;
+    border-radius: .3rem;
+    text-decoration: none;
+    max-width: 210px;
+    margin: 2rem auto 0;
+    transition: background .3s ease-in-out
+}
+
+.carousel__slide-button:hover {
+    background: #fff;
+    color: #000
+}
+
+.carousel__controls {
+    display: flex;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 3rem;
+    z-index: 5
+}
+
+.carousel__control {
+    opacity: .3;
+    background: #fff;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: none;
+    margin-right: 15px;
+    transition: .3s ease-in-out
+}
+
+.carousel__control:last-child {
+    margin-right: 0
+}
+
+.carousel__control--current,
+.carousel__control:hover {
+    opacity: 1;
+    cursor: pointer
+}
+
+.gold-thread-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: .7;
+    background: linear-gradient(120deg, transparent 0, rgba(255, 215, 0, .15) 20%, rgba(255, 215, 0, .3) 40%, transparent 10%);
+    background-size: 300% 300%;
+    animation: 16s linear infinite shimmerGold;
+    mix-blend-mode: screen;
+    z-index: 2;
+    border-radius: 1rem
+}
+
+@keyframes shimmerGold {
+    0% {
+        background-position: -200% 0
+    }
+
+    100% {
+        background-position: 200% 0
+    }
+}
+
+@keyframes textGlide {
+    to {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+@keyframes imageGlide {
+    to {
+        transform: translateX(0);
+        opacity: 1
+    }
+}
+
+@keyframes zoomInImg {
+    to {
+        transform: scale(1.08)
+    }
+}
+
+@keyframes luxGlow {
+    0% {
+        text-shadow: 0 0 2px rgba(255, 255, 255, .1)
+    }
+
+    100% {
+        text-shadow: 0 0 12px rgba(255, 255, 200, .25)
+    }
+}
+
+.slide-down-icon {
+    position: absolute;
+    bottom: 2rem;
+    right: 10%;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 32px;
+    background: url('https://static.thenounproject.com/png/54414-200.png') center/contain no-repeat;
+    filter: brightness(1000%) invert(1);
+    opacity: 0.85;
+    animation: slideDown 2s infinite;
+    z-index: 10
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translate(-50%, -5px)
+    }
+
+    50% {
+        transform: translate(-50%, 5px)
+    }
+
+    100% {
+        transform: translate(-50%, -5px)
+    }
+}
+
+/*.ABOUT.*/
+.description-font {
+    font-family: Montserrat;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 1.5;
+}
+
+#about .description-font {
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%)
+}
+
+#about {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    z-index: 1
+}
+
+#about::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.7) 70%, #fff 90%), url('https://careertraining.unm.edu/common/images/2/20778/GES2061-Wedding-Event-Planner-935x572.jpg') right center/cover no-repeat;
+    z-index: -1
+}
+
+.description-font {
+    z-index: 10;
+}
+
+.typing-text {
+    overflow: hidden;
+    border-right: .15em solid gold;
+    white-space: nowrap;
+    animation: typing 1s steps(40, end), blink .7s step-end infinite
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.bg-gold {
+    background: linear-gradient(to right, rgb(230 214 191), rgb(179 164 120)) !important;
+}
+
+.navbar-brand img {
+    width: auto;
+    height: 60px !important;
+    border-radius: 50%;
+}
+
+/* Responsive Text Adjustments */
+@media (max-width: 992px) {
+    .carousel__slide-title {
+        font-size: 2.5rem;
+    }
+
+    .carousel__slide-description {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel__slide-title {
+        font-size: 2rem;
+    }
+
+    .carousel__slide-description {
+        font-size: 1rem;
+    }
+
+    .carousel__slide-button {
+        padding: 10px 25px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel__slide-title {
+        font-size: 1.5rem;
+    }
+
+    .carousel__slide-description {
+        font-size: 0.9rem;
+    }
+
+    .carousel__slide-button {
+        padding: 8px 20px;
+        font-size: 0.85rem;
+    }
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#map iframe {
+    width: 100%;
+    min-height: 400px;
+}
+
+figure {
+    margin: 0 !important;
+}
