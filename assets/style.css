@@ -576,8 +576,25 @@ figure {
   }
 }
 
+#animated-thumbnails a {
+    display: inline-block;
+}
+
 #animated-thumbnails img {
     height: 240px;
     width: auto;
     margin:0 8px 8px 0;
+}
+
+@media (max-width: 768px) {
+    #animated-thumbnails img {
+        height: auto;
+        width: 100%;
+        max-height: 480px;
+        margin:0 8px 8px 0;
+        object-fit: cover;
+    }
+    #animated-thumbnails a {
+        width: 100%;
+    }
 }
