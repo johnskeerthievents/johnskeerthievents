@@ -1,5 +1,14 @@
 {
   "gallery": [
+        {"title": "Golden Spraklings - Throny Clouds", "event": "Stage Decors", "image": "/assets/gallery/stage-1.jpeg"},
+        {"title": "Twinkle Delights - Neclase of Rose", "event": "Stage Decors", "image": "/assets/gallery/stage-2.jpeg"},
+        {"title": "Golden Spraklings - Extended", "event": "Stage Decors", "image": "/assets/gallery/stage-3.jpeg"},
+        {"title": "Coffee Blossoms - Extended", "event": "Stage Decors", "image": "/assets/gallery/stage-4.jpeg"},
+        {"title": "Elite Spraklings - Curvy Roses", "event": "Stage Decors", "image": "/assets/gallery/stage-5.jpeg"},
+        {"title": "Elite Spraklings - Pinky Donuts", "event": "Stage Decors", "image": "/assets/gallery/stage-6.jpeg"},
+        {"title": "Elite Spraklings - Pinky Donuts Minimal", "event": "Stage Decors", "image": "/assets/gallery/stage-7.jpeg"},
+        {"title": "Elite Spraklings - Crown of Roses", "event": "Stage Decors", "image": "/assets/gallery/stage-8.jpeg"},
+        {"title": "Elite Spraklings - Crown of Roses - 2", "event": "Stage Decors", "image": "/assets/gallery/stage-9.jpeg"},
     {
       "title": "Beach Trip",
       "event": "Summer 2025",
