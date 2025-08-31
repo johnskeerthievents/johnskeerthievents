@@ -527,8 +527,10 @@
                     img.src = `${item.thumb || item.image}?${cacheBuster}`;
                     img.alt = item.title || 'Image';
                     a.appendChild(img);
+                    a.addEventListener('click', function (e) {
+                        e.preventDefault();
+                    });
                 }
-
                 else if (item.tag === 'video' && item.video.endsWith('.mp4')) {
                     mediaUrl = `${item.video}?${cacheBuster}`;
                     a.href = ''; // Prevent default link navigation
@@ -555,6 +557,10 @@
                     thumbnail.src = `${item.thumb || '/assets/default-video-thumb.jpg'}?${cacheBuster}`;
                     thumbnail.alt = item.title || 'Video';
                     a.appendChild(thumbnail);
+                    a.addEventListener('click', function (e) {
+                        e.preventDefault();
+                    });
+
                 }
 
                 container.appendChild(a);
