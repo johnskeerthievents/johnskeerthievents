@@ -1,0 +1,81 @@
+{
+  "gallery": [
+        {
+          "title": "Golden Spraklings - Throny Clouds", "event": "Stage Decors", 
+          "image": "/assets/gallery/stage-1.jpeg", "tag": "image"},
+        {
+          "title": "Twinkle Delights - Neclase of Rose", "event": "Stage Decors", 
+          "image": "/assets/gallery/stage-2.jpeg", "tag": "image"},
+        {
+          "title": "Golden Spraklings - Extended", "event": "Stage Decors", 
+          "image": "/assets/gallery/stage-3.jpeg", "tag": "image"},
+        {
+          "title": "Coffee Blossoms - Extended", "event": "Stage Decors", 
+          "image": "/assets/gallery/stage-4.jpeg", "tag": "image"},
+        {
+          "title": "Elite Spraklings - Curvy Roses", "event": "Stage Decors", 
+          "image": "/assets/gallery/stage-5.jpeg", "tag": "image"},
+        {
+          "title": "Elite Spraklings - Pinky Donuts", "event": "Stage Decors", 
+          "image": "/assets/gallery/stage-6.jpeg", "tag": "image"},
+        {
+          "title": "Elite Spraklings - Pinky Donuts Minimal", "event": "Stage Decors", 
+          "image": "/assets/gallery/stage-7.jpeg", "tag": "image"},
+        {
+          "title": "Elite Spraklings - Crown of Roses", "event": "Stage Decors", 
+          "image": "/assets/gallery/stage-8.jpeg", "tag": "image"},
+        {
+          "title": "Elite Spraklings - Crown of Roses - 2", "event": "Stage Decors", 
+          "image": "/assets/gallery/stage-9.jpeg", "tag": "image"},
+
+        {
+          "title": "Wedding Photography", "event": "Photography", 
+          "image": "/assets/photography/pic-1.jpg", "tag": "image"},
+        {
+          "title": "Wedding Photography", "event": "Photography", 
+          "image": "/assets/photography/pic-2.jpg", "tag": "image"},
+        {
+          "title": "Wedding Photography", "event": "Photography", 
+          "image": "/assets/photography/pic-3.jpg", "tag": "image"},
+        {
+          "title": "Wedding Photography", "event": "Photography", 
+          "image": "/assets/photography/pic-4.jpg", "tag": "image"},
+        {
+          "title": "Wedding Photography", "event": "Photography", 
+          "image": "/assets/photography/pic-5.jpg", "tag": "image"},
+        {
+          "title": "Wedding Photography", "event": "Photography", 
+          "image": "/assets/photography/pic-6.jpg", "tag": "image"},
+
+
+        {
+          "title": "Orchestra", "event": "Orchestra Events - Niranam Rajan", 
+          "image": "/assets/ganamela/gal-1.jpeg", "tag": "image"},
+        {
+          "title": "Orchestra", "event": "Orchestra Events - Niranam Rajan", 
+          "image": "/assets/ganamela/gal-2.jpeg", "tag": "image"},
+        {
+          "title": "Orchestra", "event": "Orchestra Events - Niranam Rajan", 
+          "image": "/assets/ganamela/gal-3.jpeg", "tag": "image"},
+
+        {
+          "title": "Orchestra", "event": "Orchestra Events - Niranam Rajan", 
+          "image": "/assets/ganamela/song-1.mp4", "tag": "video"},
+        {
+          "title": "Orchestra", "event": "Orchestra Events - Niranam Rajan", 
+          "image": "/assets/ganamela/song-2.mp4", "tag": "video"},
+        {
+          "title": "Orchestra", "event": "Orchestra Events - Niranam Rajan", 
+          "image": "/assets/ganamela/song-3.mp4", "tag": "video"},
+        {
+          "title": "Orchestra", "event": "Orchestra Events - Niranam Rajan", 
+          "image": "/assets/ganamela/song-4.mp4", "tag": "video"},
+        {
+          "title": "Orchestra", "event": "Orchestra Events - Niranam Rajan", 
+          "image": "/assets/ganamela/song-5.mp4", "tag": "video"},
+        {
+          "title": "Orchestra", "event": "Orchestra Events - Niranam Rajan", 
+          "image": "/assets/ganamela/song-6.mp4", "tag": "video"}
+
+  ]
+}
