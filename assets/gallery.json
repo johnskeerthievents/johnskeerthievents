@@ -1,5 +1,54 @@
 {
   "gallery": [
+
+        {
+          "title": "Inaugoration - 1", "event": "Inaugoration", 
+          "image": "assets/inaugoration/_N3A8333.JPG", "tag": "image"
+        },
+        {
+          "title": "Inaugoration - 2", "event": "Inaugoration", 
+          "image": "assets/inaugoration/_N3A8348.JPG", "tag": "image"
+        },
+        {
+          "title": "Inaugoration - 3", "event": "Inaugoration", 
+          "image": "assets/inaugoration/_N3A8349.JPG", "tag": "image"
+        },
+        {
+          "title": "Inaugoration - 4", "event": "Inaugoration", 
+          "image": "assets/inaugoration/_N3A8350.JPG", "tag": "image"
+        },
+        {
+          "title": "Inaugoration - 5", "event": "Inaugoration", 
+          "image": "assets/inaugoration/_N3A8369.JPG", "tag": "image"
+        },
+        {
+          "title": "Inaugoration - 6", "event": "Inaugoration", 
+          "image": "assets/inaugoration/_N3A8391.JPG", "tag": "image"
+        },
+        {
+          "title": "Inaugoration - 7", "event": "Inaugoration", 
+          "image": "assets/inaugoration/_N3A8402.JPG", "tag": "image"
+        },
+        {
+          "title": "Inaugoration - 8", "event": "Inaugoration", 
+          "image": "assets/inaugoration/_N3A8425.JPG", "tag": "image"
+        },
+        {
+          "title": "Inaugoration - 9", "event": "Inaugoration", 
+          "image": "assets/inaugoration/_N3A8444.JPG", "tag": "image"
+        },
+        {
+          "title": "Inaugoration - 10", "event": "Inaugoration", 
+          "image": "assets/inaugoration/_N3A8451.JPG", "tag": "image"
+        },
+        {
+          "title": "Inaugoration - 11", "event": "Inaugoration", 
+          "image": "assets/inaugoration/_N3A8531.JPG", "tag": "image"
+        },
+        {
+          "title": "Inaugoration - 12", "event": "Inaugoration", 
+          "image": "assets/inaugoration/_N3A8329.JPG", "tag": "image"
+        },
         {
           "title": "Golden Spraklings - Throny Clouds", "event": "Stage Decors", 
           "image": "/assets/gallery/stage-1.jpeg", "tag": "image"},

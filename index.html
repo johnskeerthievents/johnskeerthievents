@@ -68,6 +68,8 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v23.0&appId=APP_ID"></script>
 
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
@@ -82,6 +84,7 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#socialmedia">Social Medias</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -389,6 +392,23 @@
         </div>
     </section>
 
+    <!-- Social Media -->
+    <section class="social-media py-5" id="socialmedia">
+        <div class="container">
+            <h2 class="section-title text-center">Social Media</h2>
+            <div id="animated-thumbnails"></div>
+            <!-- Created using https://developers.facebook.com/docs/plugins/embedded-posts/ -->
+             <div class="fb-post" data-href="https://www.facebook.com/100034091512218/posts/1472537760559260/?rdid=7oV1AwS7rEJIlw9Z#" loading="lazy" data-width="500" data-show-text="true">
+                <blockquote cite="https://www.facebook.com/satheesh.pjoseph/posts/1472537760559260" class="fb-xfbml-parse-ignore">
+                    <p>വെണ്ണിക്കുളം. ആറങ്ങാട്ട് മാത്യു ജോൺ [ കീർത്തി ബിജു ]ന്റെ ഉടമസ്ഥതയിൽ ആരംഭിച്ച ജോൺസ് ഇവന്റ് പ്ലാനർ ഉദ്ഘാടന  സമ്മേളനത്തിൽ...</p>
+                    Posted by <a href="https://www.facebook.com/satheesh.pjoseph">Satheesh P Joseph</a> 
+                    on&nbsp;
+                    <a href="https://www.facebook.com/satheesh.pjoseph/posts/1472537760559260">Friday 12 September 2025</a>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact -->
     <section class="contact py-5 bg-light" id="contact">
         <div class="container">
@@ -494,7 +514,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/thumbnail/lg-thumbnail.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/zoom/lg-zoom.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/plugins/video/lg-video.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    
 <script>
 (function () {
     const container = document.getElementById('animated-thumbnails');
